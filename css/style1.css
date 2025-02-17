@@ -1,0 +1,135 @@
+html,
+body {
+    margin: 0;
+    padding: 4rem;
+    background: #000;
+    height: 100%;
+}
+
+.bg-mask {
+    width: 80%;
+    height: 100%;
+}
+
+body {
+    color: whitesmoke;
+    font-family: "exo 2", serif;
+    display: grid;
+    place-items: center;
+}
+
+.alert-container {
+    padding: 3rem;
+}
+
+button {
+    background-color: blueviolet;
+    color: whitesmoke;
+    margin-top: 2rem;
+    font-family: "exo 2", serif;
+    border: 2px solid darkorchid;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    transition-duration: 300ms;
+    cursor: pointer;
+}       
+
+button:hover {
+    background-color: whitesmoke;
+    color: blueviolet;
+    box-shadow: none;
+}
+
+.hack-procedure {
+    list-style: none;
+}
+
+#item-1 {
+    opacity: 0;
+    animation: hack 1s steps(1);
+    animation-fill-mode: forwards;
+}
+#item-2 {
+    opacity: 0;
+    animation: hack 1s steps(1) 1.2s;
+    animation-fill-mode: forwards;
+}
+#item-3 {
+    opacity: 0;
+    animation: hack 1s steps(1) 2s;
+    animation-fill-mode: forwards;
+}
+#item-4 {
+    opacity: 0;
+    animation: hack 1s steps(1) 2.6s;
+    animation-fill-mode: forwards;
+}
+
+.amount {
+    font-family: monospace;
+    color: rgb(175, 175, 175);
+}
+
+.alert-head {
+    margin-bottom: 3rem;
+}
+
+.alert-subhead {
+    margin-top: 3rem;
+    opacity: 0;
+    animation: show-amount 0.5s steps(1) 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hack {
+    from {
+        display: none;
+        opacity: 0;
+    }
+    to {
+        display: inline;
+        color: green;
+        opacity: 1;
+    }
+}
+@keyframes show-amount {
+    from {
+        display: none;
+        opacity: 0;
+    }
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 2rem;
+    }
+    .bg-mask {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .alert-container {
+        padding: 0.1rem;
+    }
+    .alert-container > h1 {
+        font-size: 1.5rem;
+    }
+    .alert-container > h3 {
+        font-size: 1rem;
+    }
+    .alert-container > button {
+        font-size: 0.9rem;
+        box-shadow: 2px 2px blueviolet;
+    }
+    .procedure-item {
+        font-size: 0.9rem;
+    }
+}
