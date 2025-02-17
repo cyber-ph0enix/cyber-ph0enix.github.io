@@ -10,93 +10,34 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Mono:wght@400;500;700&display=swap"
             rel="stylesheet" />
-
-        <style>
-            html,
-            body {
-                margin: 0;
-                padding: 4rem;
-                background: #000;
-                height: 100%;
-            }
-            .bg-mask {
-                width: 80%;
-                height: 100%;
-                background: linear-gradient(
-                    45deg,
-                    rgba(0, 0, 0, 1) 0,
-                    rgba(0, 0, 0, 0.7) 100%
-                ); /* W3C */
-            }
-            body {
-                color: whitesmoke;
-                font-family: "exo 2", serif;
-                display: grid;
-                place-items: center;
-            }
-
-            @media (max-width: 760px) {
-                body {
-                    padding: 2rem;
-                }
-                .bg-mask {
-                    width: 100%;
-                }
-            }
-            @media (max-width: 600px) {
-                body {
-                    padding: 0;
-                }
-                .alert-container {
-                    padding: 0.1rem;
-                }
-                .alert-container > h1 {
-                    font-size: 1.5rem;
-                }
-                .alert-container > h3 {
-                    font-size: 1rem;
-                }
-                .alert-container > button {
-                    font-size: 0.9rem;
-                    box-shadow: 2px 2px blueviolet;
-                }
-            }
-            .alert-container {
-                border: 1px solid darkorchid;
-                border-radius: 2rem;
-                padding: 3rem;
-            }
-
-            button {
-                background-color: blueviolet;
-                color: whitesmoke;
-                margin-top: 2rem;
-                font-family: "exo 2", serif;
-                border: 2px solid darkorchid;
-                border-radius: 1rem;
-                padding: 0.7rem 1rem;
-                font-size: 1.1rem;
-                transition-duration: 300ms;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background-color: whitesmoke;
-                color: blueviolet;
-                box-shadow: none;
-            }
-        </style>
+        <link rel="stylesheet" href="/css/style1.css" />
     </head>
 
     <body>
         <main class="bg-mask">
             <div class="alert-container">
                 <h1 class="alert-head">X78C32 log-43 Attack</h1>
+                <ul class="hack-procedure">
+                    <li class="procedure-item">
+                        Interface protocol: <span id="item-1">connected</span>
+                    </li>
+                    <li class="procedure-item">
+                        IP aceess point: <span id="item-2">connected</span>
+                    </li>
+                    <li class="procedure-item">
+                        log-34 access: <span id="item-3">granted</span>
+                    </li>
+                    <li class="procedure-item">
+                        OTP bypass: <span id="item-4">complete</span>
+                    </li>
+                </ul>
                 <h3 class="alert-subhead">
-                    Amount 2500 deducted
+                    Amount <span class="amount">&#8377;932</span> deducted
                 </h3>
 
-                <button>Next</button>
+                <form action="/page2.html" method="get">
+                    <button>View problem</button>
+                </form>
             </div>
         </main>
     </body>
