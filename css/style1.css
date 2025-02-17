@@ -34,7 +34,7 @@ button {
     transition-duration: 300ms;
     cursor: pointer;
     opacity: 0;
-    animation: hack 1s steps(1) 2.6s;
+    animation: show-amount 1s steps(1) 2.6s;
     animation-fill-mode: forwards;
 }       
 
