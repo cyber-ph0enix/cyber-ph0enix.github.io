@@ -75,6 +75,9 @@ body {
     color: #c5e1ff;
 }
 @media (max-width: 600px) {
+    body {
+        padding: 2vw;
+    }
     .container {
         width: 75vw;
     }
