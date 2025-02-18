@@ -71,30 +71,36 @@ body {
     height: auto;
     filter: invert(1);
 }
+.event-details {
+    color: #c5e1ff;
+}
 @media (max-width: 600px) {
+    body {
+        padding: 2vw;
+    }
     .container {
-        width: 65vw;
+        width: 75vw;
     }
     .logo {
-        width: 30vw;
-        height: 25vw;
+        width: 40vw;
+        height: 35vw;
     }
     .container > h2 {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .container > h3 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .container > h4 {
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .contact-details {
         width: 65vw;
     }
     .contact-details > h6 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .contact-logo {
-        width: 2vw;
+        width: 4vw;
     }
 }
