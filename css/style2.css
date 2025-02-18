@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .logo {
     height: 10rem;
@@ -40,18 +40,22 @@ body {
     text-align: center;
 }
 .container > h4 {
-    margin-top: 2rem;
     text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.event-info {
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    padding: 1rem;
     border: 2px solid transparent;
     border-image: linear-gradient(45deg, #00ffff3d,  #2d4683, #00ffff3d);
     border-image-slice: 1 0;
-    padding: 1rem;
     border-radius: 2rem;
-    font-weight: normal;
-    font-size: 1rem;
     color: lightgoldenrodyellow;
 }
-.container > h4::first-letter {
+.event-info::first-letter {
     color: #8bc4d8;
     font-size: larger;
     font-weight: 900;
@@ -74,6 +78,18 @@ body {
 .event-details {
     color: #c5e1ff;
 }
+.whatsapp-link {
+    color: #8bc4d8;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.whatsapp-link:visited {
+    color: #6994a4;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 2vw;
